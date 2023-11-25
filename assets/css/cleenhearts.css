@@ -11766,7 +11766,7 @@ li:hover .sidebar__comments__icon::after {
 @media (max-width: 767px) {
   .main-slider-one__item {
     padding-top: 20px;
-    padding-bottom: 150px;
+    padding-bottom: 50px;
   }
 }
 .main-slider-one__bg {
