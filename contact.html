@@ -212,7 +212,7 @@
                             <h2 class="contact-one__title">Leave us a Message</h2>
                             <form class="contact-one__form__inner contact-form-validated form-one wow fadeInUp"
                                 data-wow-duration="1500ms"
-                                action="https://bracketweb.com/cleenhearts-html/inc/sendemail.php">
+                                >
                                 <div class="row gutter-y-20">
                                     <div class="col-12">
                                         <div class="form-one__control">
@@ -228,23 +228,11 @@
                                     </div><!-- /.col-12 -->
                                     <div class="col-12">
                                         <div class="form-one__control">
-                                            <input type="tel" name="phone" id="phone" placeholder="phone no"
+                                            <input type="tel" name="mobile" id="mobile" placeholder="phone no"
                                                 class="form-one__control__input">
                                         </div><!-- /.form-one__control -->
                                     </div><!-- /.col-12 -->
-                                    <div class="col-12">
-                                        <div class="form-one__control">
-                                            <select class="selectpicker" aria-label="Default select example">
-                                                <option selected="">subject</option>
-                                                <option value="1">Volunteer</option>
-                                                <option value="2">Donations</option>
-                                                <option value="3">Foods Support</option>
-                                                <option value="4">Education Support</option>
-                                                <option value="4">Medical Support</option>
-                                                <option value="4">Sports Support</option>
-                                            </select>
-                                        </div><!-- /.form-one__control -->
-                                    </div><!-- /.col-12 -->
+                                    
                                     <div class="col-12">
                                         <div class="form-one__control">
                                             <textarea name="message" id="message" cols="30" rows="10"
@@ -520,6 +508,29 @@
     <script src="assets/vendors/jquery-lettering/jquery.lettering.min.js"></script>
     <!-- template js -->
     <script src="assets/js/cleenhearts.js"></script>
+    <script>
+        const sendMail=async()=>{
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var mobile = document.getElementById('mobile').value;
+        var message= document.getElementById('message').value
+        const result = await axios({
+          method: 'post',
+          url: 'https://mail.thereciprocalsolutions.com/contact-us',
+          data: {
+            to:"grandlodgesi@gmail.com",
+            name: name,
+            website:"Grand Lodge of South India",
+            to: "grandlodgesi@gmail.com",
+            email:email,
+            phone:mobile,
+            message:message
+          }
+        });
+        console.log(result.data);
+        document.getElementById('result').innerHTML=result.data.message
+            }
+        </script>
 </body>
 
 </html>
