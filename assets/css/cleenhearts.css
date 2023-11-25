@@ -12706,9 +12706,9 @@ li:hover .sidebar__comments__icon::after {
   }
 }
 .about-one__image__one {
-  width: 464px;
-  height: 464px;
-  border-radius: 50%;
+  width: 563px;
+    height: 438px;
+    border-radius: 50%;
 }
 @media (max-width: 575px) {
   .about-one__image__one {
