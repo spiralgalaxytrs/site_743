@@ -12732,7 +12732,7 @@ li:hover .sidebar__comments__icon::after {
 @media (max-width: 360px) {
   .about-one__image__one {
     width: 290px;
-    height: 290px;
+    height: 200px;
   }
 }
 .about-one__video {
