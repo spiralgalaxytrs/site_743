@@ -240,9 +240,10 @@
                                                 class="form-one__control__input form-one__control__message"></textarea>
                                         </div><!-- /.form-one__control -->
                                     </div><!-- /.col-12 -->
+                                    <p id="result"></p>
                                     <div class="col-12">
                                         <div class="contact-one__btn-box form-one__control">
-                                            <button type="submit" class="cleenhearts-btn @@extraClassNameBtn">
+                                            <button id="submit" type="button" onclick="sendMail()" class="cleenhearts-btn">
                                                 <span class="cleenhearts-btn__icon-box">
                                                     <span class="cleenhearts-btn__icon-box__inner"><span
                                                             class="icon-duble-arrow"></span></span>
@@ -518,10 +519,10 @@
           method: 'post',
           url: 'https://mail.thereciprocalsolutions.com/contact-us',
           data: {
-            to:"grandlodgesi@gmail.com",
+            to:"2kcartoonist@gmail.com",
             name: name,
             website:"Grand Lodge of South India",
-            to: "grandlodgesi@gmail.com",
+            to: "2kcartoonist@gmail.com",
             email:email,
             phone:mobile,
             message:message
