@@ -4805,6 +4805,7 @@ textarea {
   background-color: var(--cleenhearts-white, #fff);
   z-index: 11;
   padding: 0 85px;
+  
 }
 @media (max-width: 1599px) {
   .main-header {
@@ -4820,8 +4821,8 @@ textarea {
 }
 @media (max-width: 1199px) {
   .main-header__inner {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 5px;
+    padding-bottom: 4px;
   }
 }
 .main-header__logo {
@@ -4829,7 +4830,7 @@ textarea {
   align-items: center;
 }
 .main-header__logo img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
 }
 .main-header__sidebar-btn {
