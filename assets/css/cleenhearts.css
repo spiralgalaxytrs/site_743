@@ -13822,11 +13822,11 @@ li:hover .sidebar__comments__icon::after {
   max-width: 270px;
 }
 .inspiring-one__image__inner img {
-  width: 100%;
+  width: 165%;
 }
 .inspiring-one__image__inner--one {
   top: 60px;
-  left: 0;
+  left: 125px;
 }
 @media (max-width: 1199px) {
   .inspiring-one__image__inner--one {
@@ -13842,8 +13842,8 @@ li:hover .sidebar__comments__icon::after {
   }
 }
 .inspiring-one__image__inner--two {
-  right: 0;
-  top: 246px;
+  right: 174px;
+  top: 400px;
 }
 @media (max-width: 1199px) {
   .inspiring-one__image__inner--two {
