@@ -11751,10 +11751,10 @@ li:hover .sidebar__comments__icon::after {
 }
 .main-slider-one__item {
   background-color: var(--cleenhearts-gray, #888888);
-  position: relative;
-  z-index: 3;
-  padding-top: 201px;
-  padding-bottom: 200px;
+    position: relative;
+    z-index: 3;
+    padding-top: 72px;
+    padding-bottom: 38px;
 }
 @media (max-width: 991px) {
   .main-slider-one__item {
